@@ -1,0 +1,71 @@
+
+<div data-page="staffview" class="page toolbar-fixed">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Staff Details</div>
+      <div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+  <div class="toolbar tabbar">
+    <div class="toolbar-inner">
+		<a href="#tab1" class="active tab-link">Basic</a>
+		<!--<a href="#tab2" class="tab-link">Timetable</a>
+		<a href="#tab3" class="tab-link">Atten.</a>
+		<a href="#tab4" class="tab-link">Misc.</a>-->
+	</div>
+  </div>
+  <div class="tabs-swipeable-wrap">
+    <div class="tabs">
+      <div id="tab1" class="page-content tab active">
+        <div class="content-block">
+		<center>
+			<img id="staff_photo" src="http://placehold.it/150x150" height="150" width="120" style="border:1px solid #000;" />
+		</center>
+		  <script id="staffbasicTemplate" type="text/x-jsrender">
+			<li>
+				<div class="row">
+					<div class="col-100">
+						<p><b><small>{{>label}}</small></b><br>{{>data}}</p>
+					</div>
+				</div>
+			</li>
+			</script>
+			<div class="list-block">
+				<ul>
+					<div id="staffbasic_data"></div>
+				</ul>
+			</div>
+			<hr>
+			<script id="staffextTemplate" type="text/x-jsrender">
+			<li>
+				<div class="row">
+					<div class="col-100">
+						<p><b><small>{{>label}}</small></b><br>{{>data}}</p>
+					</div>
+				</div>
+			</li>
+			</script>
+			<div class="list-block">
+				<ul>
+					<div id="staffext_data"></div>
+				</ul>
+			</div>
+			<hr>
+			
+			
+        </div>
+      </div>
+      <!--<div id="tab3" class="page-content tab">
+        <div class="content-block">
+          <p>This is tab 3 content</p>
+        </div>
+      </div>
+	  <div id="tab4" class="page-content tab">
+        <div class="content-block">
+          <p>This is tab 4 content</p>
+        </div>
+      </div>-->
+    </div>
+  </div>
+</div>

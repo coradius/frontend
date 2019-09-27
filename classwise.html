@@ -1,0 +1,68 @@
+
+<div data-page="classwise" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Classwise Strength</div>
+      <div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+
+  <div class="page-content">
+	<div class="content-block">
+	<p>T : <span style="color:red;">Total</span>&nbsp;&nbsp;N : <span style="color:red;">New</span>&nbsp;&nbsp;O : <span style="color:red;">Old</span>&nbsp;&nbsp;M : <span style="color:red;">Male</span>&nbsp;&nbsp;F : <span style="color:red;">Female</span></p>
+		<script id="strengthTemplate" type="text/x-jsrender">
+			<li>
+				<div class="row">
+					<div class="col-5" align=center>{{>sr}}</div>
+					<div class="col-20" align=center>{{>class}}</div>
+					<div class="col-15" align=center>{{>T}}</div>
+					<div class="col-15" align=center>{{>N}}</div>
+					<div class="col-15" align=center>{{>O}}</div>
+					<div class="col-15" align=center>{{>M}}</div>
+					<div class="col-15" align=center>{{>F}}</div>
+				</div>
+			</li>
+		</script>
+		<div class="list-block">
+			<ul style="font-size:14px;">
+				<li>
+					<div class="row" style="background-color: #f0f8ff;">
+						<div class="col-5" align=center><b>#</b></div>
+						<div class="col-20" align=center><b>Class</b></div>
+						<div class="col-15" align=center><b>T</b></div>
+						<div class="col-15" align=center><b>N</b></div>
+						<div class="col-15" align=center><b>O</b></div>
+						<div class="col-15" align=center><b>M</b></div>
+						<div class="col-15" align=center><b>F</b></div>
+					</div>
+				</li>
+				<div id="strength_data"></div>
+				<li>
+					<div class="row">
+						<div class="col-5" align=center><b></b></div>
+						<div class="col-20" align=center><b>Total</b></div>
+						<div class="col-15" align=center><b><span id="TT"></span></b></div>
+						<div class="col-15" align=center><b><span id="NT"></span></b></div>
+						<div class="col-15" align=center><b><span id="OT"></span></b></div>
+						<div class="col-15" align=center><b><span id="MT"></span></b></div>
+						<div class="col-15" align=center><b><span id="FT"></span></b></div>
+					</div>
+				</li>
+				<li>
+					<div class="row" style="background-color: #f0f8ff;">
+						<div class="col-5" align=center><b>#</b></div>
+						<div class="col-20" align=center><b>Class</b></div>
+						<div class="col-15" align=center><b>T</b></div>
+						<div class="col-15" align=center><b>N</b></div>
+						<div class="col-15" align=center><b>O</b></div>
+						<div class="col-15" align=center><b>M</b></div>
+						<div class="col-15" align=center><b>F</b></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	<p>T : <span style="color:red;">Total</span>&nbsp;&nbsp;N : <span style="color:red;">New</span>&nbsp;&nbsp;O : <span style="color:red;">Old</span>&nbsp;&nbsp;M : <span style="color:red;">Male</span>&nbsp;&nbsp;F : <span style="color:red;">Female</span></p>
+	</div>	
+  </div>
+</div>

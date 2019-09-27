@@ -1,0 +1,91 @@
+
+<div data-page="students" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Student List</div>
+      <div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+  <!-- <a href="profile.html" data-ignore-cache="true" class="item-link close-panel floating-button"><i class="material-icons ">search</i></a> -->
+	<form data-search-list=".search-here" data-search-in=".item-title" class="searchbar searchbar-init">
+    <div class="searchbar-input">
+      <input type="search" placeholder="Search"/><a href="#" class="searchbar-clear"></a>
+    </div>
+  </form>
+  <div class="page-content">
+    
+      <div class="list-block">
+      <ul>
+        <li><a href="#" class="item-link smart-select"  data-open-in="picker">
+            <select name="class" id="class">
+              <option value="">-- Please Select --</option>
+              
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Class</div>
+              </div>
+            </div></a></li>
+        <li><a href="#" class="item-link smart-select"  data-open-in="picker">
+            <select name="class" id="sec">
+              <option value="">-- Please Select --</option>
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Section</div>
+              </div>
+            </div></a></li>
+</ul>
+  </div>
+  <div class="content-block text-center">
+  <div class="row">
+	<div class="col-50">
+		<button class="button button-raised student_list">Get Record</button>
+	</div>
+	<div class="col-50">
+		<span class="currschoolcode" style="color:red;font-weight:bold;"></span>
+	</div>
+  </div>
+  </div>
+
+
+  <div class="list-block searchbar-not-found">
+      <ul>
+        <li class="item-content">
+          <div class="item-inner">
+            <div class="item-title">Nothing found</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  <div class="content-block">
+		<script id="studentlistTemplate" type="text/x-jsrender">
+           <li><a href="studentview.html?adm_no={{>adm_no}}" class="item-link item-content"  data-ignore-cache="true">
+            <div class="item-media"><img src="{{>photo}}" width="80" height="80"/></div>
+            <div class="item-inner">
+              <div class="item-title-row">
+                <div class="item-title">{{>stu_name}}</div>
+                <!-- <div class="item-after">$15</div> -->
+              </div>
+              <div class="item-subtitle">{{>fat_name}}</div>
+              <!-- <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div> -->
+            </div></a></li>
+		</script>
+
+	<!-- <div class="list-block"> -->
+      <!-- <ul> -->
+        <!-- <div id="student_data"></div> -->
+		<!-- </ul> -->
+    <!-- </div> -->
+	
+	<div class="list-block  search-here searchbar-found media-list">
+      <ul>
+        <div id="student_data"></div>
+		</ul>
+	</div>
+	
+	
+  </div>	
+  </div>
+</div>

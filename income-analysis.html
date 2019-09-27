@@ -1,0 +1,126 @@
+
+<div data-page="income" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Income Analysis</div>
+      <div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="content-block">
+		
+	<div class="row">
+		<div class="col-50">
+			<b>Current School:</b>
+		</div>
+		<div class="col-50">
+			<span class="currschoolcode" style="color:red;font-weight:bold;"></span>
+		</div>
+	  </div>
+	
+		<script id="rcvblTemplate" type="text/x-jsrender">
+			<li>
+				<div class="row">
+					<div class="col-66"><b>{{>head_label}}</b></div>
+					<div class="col-33" align="right" >{{>head_amt}}</div>
+				</div>
+			</li>
+		</script>
+		<div class="list-block">
+			<ul>
+				<li>
+					<div class="row" style="background-color: #f0f8ff;">
+						<div class="col-100" align=center><b>Fee Recievable</b></div>
+					</div>
+				</li>
+				<li>
+					<div class="row" style="background-color: #f0f8ff;">
+						<div class="col-66"><b>Particulars</b></div>
+						<div class="col-33" align="right"><b>Amount (Rs.)</b></div>
+					</div>
+				</li>
+				<div id="rcvbl_data"></div>
+				<li>
+					<div class="row" style="background-color: #f0f8ff;">
+						<div class="col-66"><b>Net Recievable</b></div>
+						<div class="col-33" align="right"><b><span id="net_rcvbl"></span></b></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<hr>
+		
+		<script id="recvdTemplate" type="text/x-jsrender">
+			<li>
+				<div class="row">
+					<div class="col-66"><b>{{>head_label}}</b></div>
+					<div class="col-33" align="right" >{{>head_amt}}</div>
+				</div>
+			</li>
+		</script>
+		<div class="list-block">
+			<ul>
+				<li>
+					<div class="row" style="background-color: #faebd7;">
+						<div class="col-100" align=center><b>Fee Recieved</b></div>
+					</div>
+				</li>
+				<li>
+					<div class="row" style="background-color: #faebd7;">
+						<div class="col-66"><b>Particulars</b></div>
+						<div class="col-33" align="right"><b>Amount (Rs.)</b></div>
+					</div>
+				</li>
+				<div id="recvd_data"></div>
+				<li>
+					<div class="row" style="background-color: #faebd7;">
+						<div class="col-66"><b>Net Fee Recieved</b></div>
+						<div class="col-33" align="right"><b><span id="net_rcvd"></span></b></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<hr>
+		
+		<script id="balTemplate" type="text/x-jsrender">
+			<li>
+				<div class="row no-gutter">
+					<div class="col-50"><b>{{>head_label}}</b></div>
+					<div class="col-25" align="right" >{{>head_amt}}</div>
+					<div class="col-25" align="center" >{{>head_prcnt}} %</div>
+				</div>
+			</li>
+		</script>
+		<div class="list-block">
+			<ul>
+				<li>
+					<div class="row no-gutter" style="background-color: #7fffd4;">
+						<div class="col-100" align=center><b>Fee need to be realized</b></div>
+					</div>
+				</li>
+				<li>
+					<div class="row no-gutter" style="background-color: #7fffd4;">
+						<div class="col-50"><b>Particulars</b></div>
+						<div class="col-25" align="right"><b>Amount (Rs.)</b></div>
+						<div class="col-25" align="center"><b>%</b></div>
+					</div>
+				</li>
+				<div id="bal_data"></div>
+				<li>
+					<div class="row no-gutter" style="background-color: #7fffd4;">
+						<div class="col-50"><b>Balance</b></div>
+						<div class="col-25" align="right"><b><span id="net_bal_amt"></span></b></div>
+						<div class="col-25" align="center"><b><span id="net_bal_per"></span> %</b></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	
+	
+	</div>	
+  </div>
+</div>

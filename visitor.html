@@ -1,0 +1,66 @@
+<div data-page="visitor" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Visitors</div>
+      <div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="content-block">
+      <div class="list-block">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner"> 
+              <div class="item-input">
+                <input type="text" placeholder="From" readonly="readonly" id="from_visit"/>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content">
+            <div class="item-inner"> 
+              <div class="item-input">
+                <input type="text" placeholder="To" readonly="readonly" id="to_visit"/>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  <div class="content-block text-center">
+  <div class="row">
+	<div class="col-50">
+		<button class="button button-raised visit_record">Get Record</button>
+	</div>
+	<div class="col-50">
+		<div class="ks-preloaders" style="display:none;">
+			<span class="preloader preloader-blue"></span>
+		</div>
+	</div>
+  </div>
+  </div>
+   <script id="visitrecordTemplate" type="text/x-jsrender">
+           <li><a href="#" class="item-link item-content">
+            <div class="item-media"><img src="{{>pic}}" style="border-radius:0px;" /></div>
+            <div class="item-inner">
+              <div class="item-title-row">
+                <div class="item-title">{{>name}}</div>
+                <!-- <div class="item-after">{{>date}}</div>  -->
+              </div>
+              <div class="item-subtitle">{{>date}}</div>
+              <div class="item-text">{{>address}}<br>{{>regarding}}</div> 
+            </div></a></li>
+		</script>
+	
+		<div class="list-block media-list">
+      <ul>
+        <div id="visit_data"></div>
+		</ul>
+	</div>
+	
+    </div>
+  </div>
+</div>

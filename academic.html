@@ -1,0 +1,71 @@
+
+<div data-page="academic" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Academic Delivery</div>
+      <div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+  <div class="page-content">
+    
+      <div class="list-block">
+      <ul>
+        <li><a href="#" class="item-link smart-select " data-open-in="picker">
+            <select name="teachername" id="teachername">
+              <option value="">-- Please Select --</option>
+              
+            </select>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title">Teacher Name</div>
+              </div>
+            </div></a></li>
+      </ul>
+  </div>
+  <div class="content-block text-center">
+  <div class="row">
+	<div class="col-50">
+		<button class="button button-raised academic_d_report">Get Record</button>
+	</div>
+	<div class="col-50">
+		<div class="ks-preloaders" style="display:none;">
+			<span class="preloader preloader-blue"></span>
+		</div>
+	</div>
+  </div>
+  </div>
+
+  <div class="content-block">
+		<script id="academiclistTemplate" type="text/x-jsrender">
+			<li  style="background-color: #f0f8ff;"><a href="#" class="item-link item-content">
+				<div class="item-inner"> 
+				  <div class="item-title">{{>subject}}</div>
+				  <div class="item-after">{{>class}}</div>
+				</div></a>
+				</li>
+           <li align=center>
+				<div class="row">
+					<div class="col-50" style="background-color: #f0f8ff;" ><small>Supposed</small><br/><b>{{>supposed}} %</b></div>
+					<div class="col-50" style="background-color: {{>color}};"><small>Completed</small><br/><b>{{>complete}} %</b></div>
+				</div>
+			</li>
+			<li align=center style="background-color:#eee">&nbsp;</li>
+		</script>
+
+	<!-- <div class="list-block"> -->
+      <!-- <ul> -->
+        <!-- <div id="student_data"></div> -->
+		<!-- </ul> -->
+    <!-- </div> -->
+	
+	<div class="list-block">
+      <ul>
+        <div id="academic_data"></div>
+		</ul>
+	</div>
+	
+	
+  </div>	
+  </div>
+</div>

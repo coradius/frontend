@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <title>Coradius Manage+</title>
+    <link rel="stylesheet" href="css/framework7.material.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/kitchen-sink.css">
+    <link rel="icon" href="img/icon.png">
+  </head>
+  <body>
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+	<div class="panel panel-left panel-cover">
+      <div class="view navbar-fixed">
+        <div class="pages">
+          <div data-page="panel-left" class="page">
+            <!-- <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Navigation</div>
+              </div>
+            </div> -->
+            <div class="page-content" style="padding-top:0px !important;">
+              <!-- <div class="content-block">
+                <p>This is a side panel/drawer. You can close it by clicking outsite or on this link:<a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view like in<a href="#" data-panel="right" class="open-panel">Right Panel</a></p>
+              </div> -->
+              <div class="content-block-title">Menu</div>
+              <div class="list-block">
+                <ul>
+                  <!-- <li><a href="profile.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons color-blue">account_circle</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Profile</div>
+                        </div>
+                      </div></a></li> -->
+                  <li><a href="student.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons color-blue">face</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Students</div>
+                        </div>
+                      </div></a></li>
+				  <li><a href="classwise.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons color-blue">assessment</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Classwise Strength</div>
+                        </div>
+                      </div></a></li>
+				  <li><a href="staff.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons color-blue">person</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Staff</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="fee.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons  color-blue">monetization_on</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Fee Collection</div>
+                        </div>
+                      </div></a></li>
+				<li><a href="fee2.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons  color-blue">monetization_on</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Fee Transactions</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="income-analysis.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons  color-blue">speaker_notes</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Income Analysis</div>
+                        </div>
+                      </div></a></li>
+					 <li><a href="academic.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons  color-blue">done_all</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Academic Delivery</div>
+                        </div>
+                      </div></a></li>
+					  <li><a href="buslist.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons  color-blue">directions_bus</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Buswise List</div>
+                        </div>
+                      </div></a></li>
+					  <li><a href="useractivity.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons  color-blue">assignment</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">User Activity</div>
+                        </div>
+                      </div></a></li>
+					   <li><a href="visitor.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons  color-blue">directions_walk</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Visitors</div>
+                        </div>
+                      </div></a></li>
+					  <li><a href="activitycal.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons  color-blue">event</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Activity Calendar</div>
+                        </div>
+                      </div></a></li>
+					  <li><a href="logout.html" class="item-link close-panel"  data-ignore-cache="true">
+                      <div class="item-content">
+                        <div class="item-media"><i class="material-icons  color-blue">highlight_off</i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Logout</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+              <!-- <div class="content-block"> -->
+                <!-- <p>Long text block</p> -->
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="views">
+      <div class="view view-main">
+		<div class="pages  navbar-fixed">
+			<div data-page="dashboard" class="page">
+				<div class="navbar">
+				  <div class="navbar-inner">
+					<div class="center">Manage+ <span class="currschoolcode"></span></div>
+					<div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+				  </div>
+				</div>
+				  <a href="#" data-ignore-cache="true" onclick="dashboard();" class="item-link close-panel floating-button"><i class="material-icons ">refresh</i></a>
+				  <div class="page-content ">
+				   <!-- <div class="pull-to-refresh-layer"> -->
+					<!-- <div class="preloader"></div> -->
+					<!-- <div class="pull-to-refresh-arrow"></div> -->
+				  <!-- </div>  -->
+					<div class="login-screen-title"><img id="logo" src="img/logo.jpg" style="width:100px;" /></div>
+					<p align=center><b><span id="school_title"></span></b></p>
+					<script id="locationTemplate" type="text/x-jsrender">
+							<a href="#" class="button button-fill button-raised" onclick="setcurrschoolcode('{{>code}}');"  >{{>location}}</a>
+						</script>
+					<p class="buttons-row"  id="location">
+						
+						
+					</p>
+					
+					<div class="content-block-title">Fee Collections</div>
+					<div class="list-block">
+					  <ul>
+					  <li><a href="#" class="item-link item-content">
+							<div class="item-inner"> 
+							  <div class="item-after">Total Collection</div>
+							  <div class="item-title">Rs. <span id="total_coll"></span></div>
+							</div></a></li>
+							<li>
+						  <div class="item-divider">Location Specific</div>
+						</li>
+					  <script id="totalTemplate" type="text/x-jsrender">
+						<li><a href="#" class="item-link item-content">
+							<div class="item-inner"> 
+							  <div class="item-after">{{>location}}</div>
+							  <div class="item-title">Rs. {{>amount}}</div>
+							</div></a></li>
+							</script>
+							<div id="totalarea"></div>
+						<li>
+						  <div class="item-divider">Mode Specific</div>
+						</li>
+						 <script id="modeTemplate" type="text/x-jsrender">
+							<li><a href="#" class="item-link item-content">
+								<div class="item-inner"> 
+								  <div class="item-after">{{>type}}</div>
+								  <div class="item-title">Rs. {{>amount}}</div>
+								</div></a>
+							</li>
+						</script>
+						<div id="modearea"></div>
+						<li>
+						  <div class="item-divider">Collection Type</div>
+						</li>
+						 <script id="typeTemplate" type="text/x-jsrender">
+							<li><a href="#" class="item-link item-content">
+								<div class="item-inner"> 
+								  <div class="item-after">{{:type}}</div>
+								  <div class="item-title">Rs. {{:type_total}}</div>
+								</div></a>
+							</li>
+						</script>
+						<div id="typearea"></div>
+						<li>
+						  <div class="item-divider">Student Stats</div>
+						</li>
+						 <script id="strenthTemplate" type="text/x-jsrender">
+							<li><a href="#" class="item-link item-content">
+								<div class="item-inner"> 
+								  <div class="item-after">{{:type}}</div>
+								  <div class="item-title">{{:value}}</div>
+								</div></a>
+							</li>
+						</script>
+						<div id="strentharea"></div>
+						</ul>
+					</div>
+					
+					<script id="attendanceheadTemplate" type="text/x-jsrender">
+					<div class="content-block-title">Staff Attendance {{>location}}</div>
+					<div class="row">
+						<div class="col-25 text-center"><strong>Present</strong><br><span>{{>present}}</span></div>
+						<div class="col-25 text-center"><strong>Absent</strong><br><span>{{>absent}}</span></div>
+						<div class="col-25 text-center"><strong>Leave</strong><br><span>{{>leave}}</span></div>
+						<div class="col-25 text-center"><strong>Late</strong><br><span>{{>late}}</span></div>
+					</div>
+					</script>
+					
+					<div id="attendanceheadarea"></div>
+					
+					<script id="studentattendanceheadTemplate" type="text/x-jsrender">
+					<div class="content-block-title">Student Attendance {{>location}}</div>
+					<div class="row">
+						<div class="col-25 text-center"><strong>Present</strong><br><span>{{>present}}</span></div>
+						<div class="col-25 text-center"><strong>Absent</strong><br><span>{{>absent}}</span></div>
+						<div class="col-25 text-center"><strong>Leave</strong><br><span>{{>leave}}</span></div>
+						<div class="col-25 text-center"><strong>Holiday</strong><br><span>{{>holiday}}</span></div>
+					</div>
+					</script>
+					
+					<div id="studentattendanceheadarea"></div>
+					
+					
+					<!--<div class="content-block-title">Student Attendance</div>
+					<div class="row">
+						<div class="col-25 text-center"><strong>Present</strong><br><span id="spresent"></span></div>
+						<div class="col-25 text-center"><strong>Absent</strong><br><span id="sabsent"></span></div>
+						<div class="col-25 text-center"><strong>Leave</strong><br><span id="sleave"></span></div>
+						<div class="col-25 text-center"><strong>Holiday</strong><br><span id="sholiday"></span></div>
+					</div>
+					<br/>
+					<br/>
+				  </div>-->
+				</div>
+		
+      </div>
+      </div>
+    </div>
+	<script type="text/javascript" src="js/framework7.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jsrender.min.js"></script>
+	<script type="text/javascript" src="js/kitchen-sink.js"></script>
+    <script>dashboard();</script>
+</body>
+</html>

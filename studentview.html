@@ -1,0 +1,141 @@
+
+<div data-page="studentview" class="page toolbar-fixed">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Student Details</div>
+      <div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+  <div class="toolbar tabbar">
+    <div class="toolbar-inner">
+		<a href="#tab1" class="active tab-link">Basic</a>
+		<a href="#tab2" class="tab-link">Fee</a>
+		<!--<a href="#tab3" class="tab-link">Atten.</a>
+		<a href="#tab4" class="tab-link">Misc.</a>-->
+	</div>
+  </div>
+  <div class="tabs-swipeable-wrap">
+    <div class="tabs">
+      <div id="tab1" class="page-content tab active">
+        <div class="content-block">
+		<center>
+			<img id="stu_photo" src="http://placehold.it/150x150" height="150" width="120" style="border:1px solid #000;" />
+		</center>
+		  <script id="basicTemplate" type="text/x-jsrender">
+			<li>
+				<div class="row">
+					<div class="col-100">
+						<p><b><small>{{>label}}</small></b><br>{{>data}}</p>
+					</div>
+				</div>
+			</li>
+			</script>
+			<div class="list-block">
+				<ul>
+					<div id="basic_data"></div>
+				</ul>
+			</div>
+			<hr>
+			
+			<script id="familyTemplate" type="text/x-jsrender">
+			<li>
+				<div class="row">
+					<div class="col-100">
+						<p><b><small>{{>label}}</small></b><br>{{>data}}</p>
+					</div>
+				</div>
+			</li>
+			</script>
+			<div class="list-block">
+				<ul>
+					<div id="family_data"></div>
+				</ul>
+			</div>
+			
+        </div>
+      </div>
+      <div id="tab2" class="page-content tab">
+        <div class="content-block">
+			<script id="feeheadTemplate" type="text/x-jsrender">
+				<li>
+					<div class="row">
+						<div class="col-75"><b>{{>head}}</b></div>
+						<div class="col-25" align="center" >{{>head_amt}}</div>
+					</div>
+				</li>
+			</script>
+			<p align=center style="font-size:18px;"><b>Fee Status</b></p> 
+			<p><b>Fee Category : <span style="color:red;" id="fee_cat"></span></b></p> 
+			<div class="list-block">
+				<ul>
+					<li>
+						<div class="row" style="background-color: #f0f8ff;">
+							<div class="col-75"><b>Particulars</b></div>
+							<div class="col-25" align="center"><b>Amount</b></div>
+						</div>
+					</li>
+					<div id="feehead_data"></div>
+					<li>
+						<div class="row" style="background-color: #f0f8ff;">
+							<div class="col-75"><b>Total School Fee</b></div>
+							<div class="col-25" align="center"><b><span id="total_fee"></span></b></div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-75"><b><span id="head_label_tp"></span></b></div>
+							<div class="col-25" align="center" ><span id="head_amt_tp"></span></div>
+						</div>
+					</li>
+					<li>
+						<div class="row" style="background-color: antiquewhite;">
+							<div class="col-75"><b>Total Fee Payable</b></div>
+							<div class="col-25" align="center"><b><span id="total_fee_tp"></span></b></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		  
+		  <p align=center style="font-size:18px;"><b>Paid Amount</b></p> 
+		  
+			<script id="feerecTemplate" type="text/x-jsrender">
+				<li>
+					<div class="row">
+						<div class="col-30" align=center>{{>rec_no}}<br>{{>rec_date}}</div>
+						<div class="col-30" align=center><b>Rs. {{>amount}}</b></div>
+						<div class="col-40" align=center>{{>mode}} {{>remark}}</div>
+					</div>
+				</li>
+			</script>
+			<div class="list-block">
+				<ul style="font-size:13px;">
+					<li>
+						<div class="row" style="background-color: #f0f8ff;">
+							<div class="col-30" align=center><b>Rec. No.<br>Date</b></div>
+							<div class="col-30" align=center><b>Amount</b></div>
+							<div class="col-40" align=center><b>Particulars</b></div>
+						</div>
+					</li>
+					<div id="feerec_data"></div>
+				</ul>
+			</div>
+			
+			<p align="center" style="font-size:16px;"><b>Total Paid : Rs. <span style="color:red;" id="fee_paid"></span></b></p> 
+			<p align="center" style="font-size:16px;"><b>Overall Balance : Rs. <span style="color:red;" id="fee_balance"></span></b></p> 
+          
+        </div>
+      </div>
+      <!--<div id="tab3" class="page-content tab">
+        <div class="content-block">
+          <p>This is tab 3 content</p>
+        </div>
+      </div>
+	  <div id="tab4" class="page-content tab">
+        <div class="content-block">
+          <p>This is tab 4 content</p>
+        </div>
+      </div>-->
+    </div>
+  </div>
+</div>
