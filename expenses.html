@@ -53,6 +53,14 @@
 			</div>
 		</a>
 	</li>
+	<li>
+		<a href="#" class="item-link item-content">
+			<div class="item-inner">
+				<div class="item-title">Rs. {{>balance}}</div>
+				<div class="item-after">Balance</div>
+			</div>
+		</a>
+	</li>
 	
 	</script>
 	
@@ -69,7 +77,7 @@
 		<li style="border-bottom:2px solid #ccc;">
 			<div class="row">
 				<div class="col-30" align=center>{{>voucher_no}}<br>{{>rec_date}}</div>
-				<div class="col-30" align=center><b>Rs. {{>amount}}</b></div>
+				<div class="col-30" align=center><b style="color:{{>color}};font-size: 15px;">Rs. {{>amount}}</b></div>
 				<div class="col-40" align=center>{{>mode}}</div>
 			</div>
 			<div class="row">
