@@ -133,6 +133,50 @@ myApp.onPageInit('fee2', function (page) {
 	});
   
 });
+
+myApp.onPageInit('expenses', function (page) {
+	var calendarDefault = myApp.calendar({
+        input: '#from2',
+	});
+	var calendarDefault = myApp.calendar({
+        input: '#to2',
+	});
+	var school_code_curr = localStorage.getItem("school_code_curr");
+	$$('.expenses2').on('click', function () {
+		var a = $$('#from2').val();
+		var b = $$('#to2').val();
+		//$$('.fee_record').prop('disabled','disabled');
+		//$$('.fee_record').text('Getting Record');
+		$$('.ks-preloaders').css('display','block');
+		$$.ajax({
+			url: base_url + '?rquest=expenses&token='+token+'&school_code='+school_code_curr+'&username='+username+'&from='+a+'&to='+b,
+			method: 'GET',
+			success: function (json2) {
+				var json = JSON.parse(json2);
+				if (json.response == 200) {
+					$$('.ks-preloaders').css('display','none');
+					if(json.data.exp_txn!=null) {
+						$$( "#exp_txn_data" ).html(
+							$( "#exptxnTemplate" ).render( json.data.exp_txn )
+						);
+					} else {
+						$$( "#exp_txn_data" ).html("No Record Found.");
+					}
+					
+					$$( "#exp_summary_data2" ).html(
+						$( "#exprecordTemplate" ).render( json.data.exp_summary )
+					);
+				} else {
+					//document.location.href='login.html';
+				}
+			},
+			failed: function (data) {
+				//document.location.href='login.html';
+			}
+		});
+	});
+  
+});
 myApp.onPageInit('fee', function (page) {
 	var calendarDefault = myApp.calendar({
         input: '#from',
