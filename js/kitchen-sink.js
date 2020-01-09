@@ -475,9 +475,11 @@ myApp.onPageInit('studentview', function (page) {
 					$$( "#fee_cat" ).html(json.data.fee_cat);
 					$$( "#fee_paid" ).html(json.data.total_paid);
 					$$( "#fee_balance" ).html(json.data.total_balance);
-					$$( "#feerec_data" ).html(
-						$( "#feerecTemplate" ).render( json.data.fee_record )
-					);
+					if(json.data.fee_record != null) {
+						$$( "#feerec_data" ).html(
+							$( "#feerecTemplate" ).render( json.data.fee_record )
+						);
+					}
 				} else {
 					$$( "#basic_data" ).html("No Record Found.");
 				}
